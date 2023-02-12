@@ -147,11 +147,7 @@ public class ItemServiceImpl implements ItemService {
         List<CommentDto> comments = new ArrayList<>();
         if (comment == null) {
             itemDto.setComments(comments);
-        }
-//        else if (comment.getText().isEmpty()) {
-//            throw new AddEmptyCommentException("Comment not found");
-//        }
-        else {
+        } else {
             for (Booking booking : bookingByItemId) {
                 if (userId.equals(booking.getBookerId())
                         && booking.getStatus().equals(Status.APPROVED)
