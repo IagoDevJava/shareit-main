@@ -1,0 +1,10 @@
+DELETE FROM comments;
+DELETE FROM bookings;
+DELETE FROM items;
+DELETE FROM requests;
+DELETE FROM users;
+DROP TABLE comments;
+DROP TABLE bookings;
+DROP TABLE items;
+DROP TABLE requests;
+DROP TABLE users;
